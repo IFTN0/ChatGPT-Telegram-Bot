@@ -3,10 +3,10 @@ from dotenv import load_dotenv
 load_dotenv()
 
 WEB_HOOK = os.environ.get('WEB_HOOK', None)
-BOT_TOKEN = os.environ.get('6842808395:AAELGyjOHvApthwng4Ajh2P9fPoOZMCEnKM', None)
+BOT_TOKEN = os.environ.get('BOT_TOKEN', None)
 PORT = int(os.environ.get('PORT', '8080'))
 NICK = os.environ.get('NICK', None)
-API = os.environ.get('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', None)
+API = os.environ.get('API', None)
 PASS_HISTORY = (os.environ.get('PASS_HISTORY', "False") == "False") == False
 USE_GOOGLE = (os.environ.get('USE_GOOGLE', "True") == "False") == False
 if os.environ.get('GOOGLE_API_KEY', None) == None and os.environ.get('GOOGLE_CSE_ID', None) == None:
