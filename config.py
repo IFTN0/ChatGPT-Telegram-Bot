@@ -3,16 +3,16 @@ from dotenv import load_dotenv
 load_dotenv()
 
 WEB_HOOK = os.environ.get('WEB_HOOK', None)
-BOT_TOKEN = os.environ.get('BOT_TOKEN', None)
+BOT_TOKEN = os.environ.get('6842808395:AAELGyjOHvApthwng4Ajh2P9fPoOZMCEnKM', None)
 PORT = int(os.environ.get('PORT', '8080'))
 NICK = os.environ.get('NICK', None)
-API = os.environ.get('API', None)
+API = os.environ.get('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', None)
 PASS_HISTORY = (os.environ.get('PASS_HISTORY', "False") == "False") == False
 USE_GOOGLE = (os.environ.get('USE_GOOGLE', "True") == "False") == False
 if os.environ.get('GOOGLE_API_KEY', None) == None and os.environ.get('GOOGLE_CSE_ID', None) == None:
     USE_GOOGLE = False
 temperature = float(os.environ.get('temperature', '0.5'))
-GPT_ENGINE = os.environ.get('GPT_ENGINE', 'gpt-4-0125-preview')
+GPT_ENGINE = os.environ.get('GPT_ENGINE', 'gpt-3.5-turbo-1106')
 # DEFAULT_SEARCH_MODEL = os.environ.get('DEFAULT_SEARCH_MODEL', 'gpt-3.5-turbo-1106') gpt-3.5-turbo-16k
 API_URL = os.environ.get('API_URL', 'https://api.openai.com/v1/chat/completions')
 # PDF_EMBEDDING = (os.environ.get('PDF_EMBEDDING', "True") == "False") == False
